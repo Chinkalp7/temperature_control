@@ -1,0 +1,6 @@
+<launch>
+   <master auto="start"/>
+   <node pkg="temppid" name="temperature_broadcast" type="temp_broadcast"/>
+   <node pkg="temppid" name="pid_control" type="pid_control"/>
+   <node pkg="temppid" name="desired_temp" type="desired_temp"/>
+ </launch>
